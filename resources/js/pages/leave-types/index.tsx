@@ -105,8 +105,8 @@ import { toast} from 'sonner'
                                 <td className='py-3 px-4 text-right'>{type.leave_requests_count}</td> 
                                 <td className='py-3 px-4 '>
                                     <div className="flex justify-end gap-2">
-                                        <Button className='text-muted-foreground hover:text-foreground ' title='Edit' onClick={()=>openEdit(type)}><Pencil className='h-5 w-5 mr-2'/></Button>
-                                 <Button className='text-muted-foreground hover:text-destructive ' title='Delete' onClick={()=>handleDelete(type)}><Trash2 className='h-5 w-5 mr-2'/></Button>
+                                        <Button className='bg-blue-400 hover:bg-blue-400/50' title='Edit' onClick={()=>openEdit(type)}><Pencil className='h-5 w-5 mr-2'/></Button>
+                                 <Button className='bg-red-400 hover:bg-red-400/50' title='Delete' onClick={()=>handleDelete(type)}><Trash2 className='h-5 w-5 mr-2'/></Button>
                                     </div>
                                     </td>       
                         </tr>

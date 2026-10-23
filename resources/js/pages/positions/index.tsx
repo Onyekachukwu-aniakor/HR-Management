@@ -143,12 +143,12 @@ return (
                             <td className='px-4 py-3 text-right'>{position.employees_count ?? 0}</td>
                             <td className='px-4 py-3 '>
                             <div className="flex justify-end gap-2">
-                                <button onClick={()=>openEdit(position)}  className='text-muted-foreground hover:text-foreground' title='Edit'>
+                                <Button onClick={()=>openEdit(position)}  className='bg-blue-400 hover:bg-blue-400/50' title='Edit'>
                                     <Pencil className='h-4 w-4 '/>
-                                </button>
-                                <button onClick={()=>handleDelete(position)}  className='text-muted-foreground hover:text-destructive' title='Delete'>
+                                </Button>
+                                <Button onClick={()=>handleDelete(position)}  className='bg-red-400 hover:bg-red-400/50' title='Delete'>
                                     <Trash2 className='h-4 w-4 '/>
-                                </button>
+                                </Button>
                             </div>
                             </td>
                         </tr>

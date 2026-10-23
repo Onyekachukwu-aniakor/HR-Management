@@ -170,8 +170,8 @@ export default function EmployeesIndex({employees, managers, departments, positi
                                 <div className="mt-3 flex items-center justify-between" >
                                     <span className={`inline-flex rounded-full px-2.5 py-0.5 text-xs font-medium ${statusStyles[employee.employment_status]}`}>{employee.employment_status.replace('_', '')}</span>
                                     <div className="flex gap-2">
-                                        <Button onClick={()=>openEdit(employee)}  className='text-muted-foreground hover:text-foreground' title='Edit'><Pencil className='h-4 w-4'/></Button>
-                                        <Button onClick={()=>handleDelete(employee)}  className='text-muted-foreground hover:text-destructive' title='Remove'><Trash2 className='h-4 w-4'/></Button>
+                                        <Button onClick={()=>openEdit(employee)}  className='bg-blue-400 hover:bg-blue-400/50' title='Edit'><Pencil className='h-4 w-4'/></Button>
+                                        <Button onClick={()=>handleDelete(employee)}  className='bg-red-400 hover:bg-red-400/50' title='Remove'><Trash2 className='h-4 w-4'/></Button>
                                     </div>
                                 </div>
                             </div>

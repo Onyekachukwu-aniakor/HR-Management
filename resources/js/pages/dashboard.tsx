@@ -114,7 +114,7 @@ export default function Dashboard({ stats, headcountByDepartment, pendingRequest
 
 function StatCard({ icon, label, value }: { icon: React.ReactNode; label: string; value: number }) {
     return (
-        <div className="rounded-xl border p-5">
+        <div className="rounded-xl border p-5  ">
             <div className="flex items-center gap-2 text-muted-foreground">
                 {icon}
                 <span className="text-sm">{label}</span>

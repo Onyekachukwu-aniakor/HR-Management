@@ -133,13 +133,13 @@ export default function DepartmentsIndex({departments, filters} : Props) {
                             <td className='px-4 py-3 text-right'>{department.positions_count ?? 0}</td>
                             <td className='px-4 py-3 text-right'>{department.employees_count ?? 0}</td>
                             <td className='px-4 py-3 '>
-                            <div className="flex justify-end gap-2">
-                                <button onClick={()=>openEdit(department)}  className='text-muted-foreground hover:text-foreground' title='Edit'>
+                            <div className="flex justify-end gap-3">
+                                <Button onClick={()=>openEdit(department)}  className='bg-blue-400 hover:bg-blue-400/50' title='Edit'>
                                     <Pencil className='h-4 w-4 '/>
-                                </button>
-                                <button onClick={()=>handleDelete(department)}  className='text-muted-foreground hover:text-destructive' title='Delete'>
+                                </Button>
+                                <Button onClick={()=>handleDelete(department)}  className='bg-red-400 hover:bg-red-400/50' title='Delete'>
                                     <Trash2 className='h-4 w-4 '/>
-                                </button>
+                                </Button>
                             </div>
                             </td>
                         </tr>
